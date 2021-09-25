@@ -13,16 +13,21 @@
   
 </head>
 <body>
-  <section id="top">
+  <!-- HEADER SECTION -->
+  <header>
     <img src="images/logo-bonus.svg">
 
    <div> 
      <button> SCORE <span id="score"> 0 </span></button>
     </div>
-  </section>
- 
+  </header>
+
+  
 
 
+<main>
+
+  <!-- MID SECTION -->
   <section id="choose">
       <img id="scissors" src="images/icon-scissors.svg" alt="scissors"> 
     <img id="paper" src="images/icon-paper.svg" alt="paper">
@@ -30,10 +35,22 @@
     <img id="lizard" src="images/icon-lizard.svg" alt="lizard">
     <img id="rock" src="images/icon-rock.svg" alt="rock">
   </section>
+</main>
 
 
- <div> <button class="rules">Rules </button>
-  </div>
+
+
+<!-- BOTTOM SECTION -->
+ <div class="bottom"> 
+   <button class="rulesBtn" >Rules </button>
+   <div id="rules">
+     <div>
+        <p id="title">RULES</p>
+        <img src="images/icon-close.svg" id="close">  
+      </div>
+      <img src="images/image-rules-bonus.svg" >
+    </div>
+</div>
 
   <!-- You Picked
   The House Picked
@@ -45,11 +62,11 @@
 
   
 
-  
-  <div class="attribution">
+  <!-- FOOTER SECTION -->
+  <footer class="attribution">
     Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
     Coded by <a href="#">Maggy</a>.
-  </div>
+  </footer>
 
 
   <script src="index.js"></script>

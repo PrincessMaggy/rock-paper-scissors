@@ -38,4 +38,32 @@ function updateScore(){
 
 
 
+
+
+
     
+
+// RULES SECTION VISIBILITY
+let rules = document.getElementById('rules');
+let header = document.querySelector('header');
+let main =  document.querySelector('main');
+let rulesBtn =document.querySelector(".rulesBtn");
+let closeBtn = document.getElementById('close');
+
+
+
+const pop =() =>{
+    rules.classList.toggle("show");
+    header.style.opacity='0.5';
+     main.style.opacity='0.5';
+}
+    
+rulesBtn.addEventListener('click', pop);
+    
+const close= () =>{
+    rules.style.display ='none';
+    header.style.opacity='1';
+     main.style.opacity='1';
+}
+
+closeBtn.addEventListener('click', close);
