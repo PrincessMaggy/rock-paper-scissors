@@ -81,8 +81,9 @@
     #choose img{
         padding:0.5em;
         max-width: 80%;
-        border-radius: 50%;
-       border: 1em groove;
+        /* border-radius: 50%; */
+        margin-right: auto;
+        margin-left: auto;
        background-color: white;
        
     }
@@ -99,17 +100,6 @@
         font-weight: 500;
         font-size: 0.7rem;
     }
-    /* #scissors{
-    }
-    #paper{
-
-
-    }
-    #spock{
-    }
-    #rock{
-
-    } */
 
 
     .attribution {
