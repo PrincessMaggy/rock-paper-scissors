@@ -1,0 +1,121 @@
+@import url('https://fonts.googleapis.com/css2?family=Barlow+Semi+Condensed&display=swap');
+
+
+:root{
+    --scissorsGrad1: hsl(39, 89%, 49%);
+    --scissorsGrad2:hsl(40, 84%, 53%);
+    --paperGrad1:hsl(230, 89%, 62%);
+    --paperGrad2:hsl(230, 89%, 65%);
+    --rockGrad1: hsl(349, 71%, 52%);
+    --rockGrad2:hsl(349, 70%, 56%);
+    --lizardGrad1: hsl(261, 73%, 60%);
+    --lizardGrad2: hsl(261, 72%, 63%);
+    --cyan1: hsl(189, 59%, 53%);
+    --cyan2: to hsl(189, 58%, 57%);
+
+
+
+    --darkText: hsl(229, 25%, 31%);
+    --scoreText: hsl(229, 64%, 46%);
+    --headerOutline: hsl(217, 16%, 45%);
+
+    --background1:hsl(214, 47%, 23%);
+    --background2: hsl(237, 49%, 15%);
+
+
+    --globalFont: 'Barlow Semi Condensed', sans-serif;
+
+}
+
+
+
+    *{
+        box-sizing: border-box;
+        margin:0;
+        cursor: pointer;
+        font-family:var(--globalFont);
+    
+    }
+     body{
+        margin: 0;
+        padding: 1em;
+        transition: 0.5s ease;
+        text-align: center;
+        background-image:   radial-gradient(closest-side, var(--background1) 0%, var(--background2)100%);
+        background-size: cover;
+        display: flex;
+        flex-direction: column;
+    } 
+    #top {
+        display: flex;
+        padding: 0.5em;
+        border:5px groove var(--headerOutline);
+        width: 40vw;
+        border-radius: 10px;
+        margin-right: auto;
+        margin-left: auto;
+        margin-bottom: 1em;
+        height: 8em;
+        justify-content:space-between;
+    }
+    #top button{
+        height:9em ;
+        width: 8em;
+        padding: 1em;
+        border-radius: 10px;
+        border:none;
+        color: var(--background1);
+        font-size: 0.7rem;
+        font-weight: 500;
+      
+    }
+
+    #choose{
+        height: 40vh;
+        background: url(images/bg-pentagon.svg) center;
+       background-size:contain;
+       background-repeat: no-repeat;
+      
+       
+    }
+    #choose img{
+        padding:0.5em;
+        max-width: 80%;
+        border-radius: 50%;
+       border: 1em groove;
+       background-color: white;
+       
+    }
+
+
+    .rules{
+        float: right;
+        background-color: inherit;
+        text-transform: uppercase;
+        padding:0.5em 2em 0.5em 2em;
+        color: white;
+        border: 2px groove var(--headerOutline);
+        border-radius: 10px;
+        font-weight: 500;
+        font-size: 0.7rem;
+    }
+    /* #scissors{
+    }
+    #paper{
+
+
+    }
+    #spock{
+    }
+    #rock{
+
+    } */
+
+
+    .attribution {
+         font-size: 11px; text-align: center; 
+        }
+    .attribution a {
+         color: var(--cyan1);
+         }
+ 
