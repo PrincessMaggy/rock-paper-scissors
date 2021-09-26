@@ -78,6 +78,12 @@
     }
 
 
+
+
+
+
+
+
     /* MID SECTION */
     #choose{
         height: 40vh;
@@ -96,6 +102,37 @@
        background-color: white;
        
     }
+
+
+
+
+    #step2 {
+        text-align: center;
+        margin: 4em;
+    }
+    #step2 p{
+        display: inline-flex;
+        color: white;
+        font-weight: 700;
+        padding: 1em 4em 0 4em;
+    }
+    #step2 .choices{
+        margin: 1em;
+        padding: 2em;
+    }
+    .choices img{
+        background-color: white;;
+        padding:0.5em;
+        max-width: 80%;
+        margin: 1em 10% 0 10%;
+    }
+
+
+
+
+
+
+
 
 
 
@@ -125,7 +162,15 @@
         z-index: 1;
         top: 20%;
         left: 35%;
-        padding: 2em;
+        padding: 2em 1em 2em 1em;
+    }
+    #rules div{
+        display: flex;
+        justify-content: space-between;
+
+    }
+    #close:focus{
+        color: var(--background1);
     }
     
     #rules.show {
@@ -143,6 +188,9 @@
       @keyframes fadeIn {
         from {opacity: 0;}
         to {opacity:2 ;}
+      }
+      #rules.hide {
+        visibility: hidden;
       }
       #rules p{
           color: var(--darkText);
