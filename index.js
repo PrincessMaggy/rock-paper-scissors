@@ -50,10 +50,16 @@ const playRound =(playerSelection,computerSelection, imgSrc1, imgSrc2) =>{
         <p> THE HOUSE PICKED </p>
      </div>
     <div class ='choices'>
-        <img src='${imgSrc1}' id ='${playerSelection}' class ='choice1' alt ='${playerSelection}'/>
-        <p class ='word'>${word}</p>
-        <button id='play' onclick ='playAgain()'> PLAY AGAIN </button>
-        <img src='${imgSrc2}' id ='${playerSelection}'  class ='choice2' alt ='${playerSelection}'/>
+       <div> 
+            <img src='${imgSrc1}' id ='${playerSelection}' class ='choice1' alt ='${playerSelection}'/> 
+       </div>
+        <div class ='wnp'> 
+            <p class ='word'>${word}</p>
+            <button id='play' onclick ='playAgain()'> PLAY AGAIN </button>
+        </div>
+        <div>
+            <img src='${imgSrc2}' id ='${playerSelection}'  class ='choice2' alt ='${playerSelection}'/>
+        </div>
     </div> `;
     step2.innerHTML = step2Contents;
   };
