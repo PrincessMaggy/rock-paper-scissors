@@ -90,6 +90,7 @@
         background: url(images/bg-pentagon.svg) center;
        background-size:contain;
        background-repeat: no-repeat;
+       margin: 4em;
       
        
     }
@@ -102,9 +103,67 @@
        background-color: white;
        
     }
-
+/* Image positioning */
     
-     
+
+
+    #scissors{
+        width: 5%;
+        position: absolute;
+        top: 34%;
+        left: 50%;
+        -webkit-transform: translate(-50%, -50%);
+        -moz-transform: translate(-50%, -50%);
+        -ms-transform: translate(-50%, -50%);
+        -o-transform: translate(-50%, -50%);
+        transform: translate(-50%, -50%);
+    } 
+    #paper{
+        width: 5%;
+        position: absolute;
+        top: 46%;
+        left: 61%;
+        -webkit-transform: translate(-50%, -50%);
+        -moz-transform: translate(-50%, -50%);
+        -ms-transform: translate(-50%, -50%);
+        -o-transform: translate(-50%, -50%);
+        transform: translate(-50%, -50%);
+    }
+    #spock{
+        width: 5%;
+        position: absolute;
+        top: 47%;
+        left:39%;
+        -webkit-transform: translate(-50%, -50%);
+        -moz-transform: translate(-50%, -50%);
+        -ms-transform: translate(-50%, -50%);
+        -o-transform: translate(-50%, -50%);
+        transform: translate(-50%, -50%);
+    }
+
+    #lizard{
+        width: 5%;
+        position: absolute;
+        top: 70%;
+        left: 42%;
+        -webkit-transform: translate(-50%, -50%);
+        -moz-transform: translate(-50%, -50%);
+        -ms-transform: translate(-50%, -50%);
+        -o-transform: translate(-50%, -50%);
+        transform: translate(-50%, -50%);
+    }
+    #rock{
+        width: 5%;
+        position: absolute;
+        top: 70%;
+        left: 57%;
+        -webkit-transform: translate(-50%, -50%);
+        -moz-transform: translate(-50%, -50%);
+        -ms-transform: translate(-50%, -50%);
+        -o-transform: translate(-50%, -50%);
+        transform: translate(-50%, -50%);
+    }
+        
 
     #step2 {
         text-align: center;
@@ -157,6 +216,7 @@
 
 
 
+   
 
 
 
