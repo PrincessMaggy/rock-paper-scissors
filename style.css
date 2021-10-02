@@ -10,8 +10,8 @@
     --rockGrad2:hsl(349, 70%, 56%);
     --lizardGrad1: hsl(261, 73%, 60%);
     --lizardGrad2: hsl(261, 72%, 63%);
-    --cyan1: hsl(189, 59%, 53%);
-    --cyan2: to hsl(189, 58%, 57%);
+    --spock1: hsl(189, 59%, 53%);
+    --spock2: hsl(189, 58%, 57%);
 
 
 
@@ -94,21 +94,12 @@
       
        
     }
-    #choose img{
-        padding:0.5em;
-        max-width: 80%;
-        border-radius: 50%;
-        margin-right: auto;
-        margin-left: auto;
-       background-color: white;
-       
-    }
+    
 /* Image positioning */
     
 
 
-    #scissors{
-        width: 5%;
+#one{
         position: absolute;
         top: 34%;
         left: 50%;
@@ -117,9 +108,40 @@
         -ms-transform: translate(-50%, -50%);
         -o-transform: translate(-50%, -50%);
         transform: translate(-50%, -50%);
+        background-color: white;
+        padding: 0.5em;
     } 
-    #paper{
-        width: 5%;
+    /* .borderColor1{
+        height: 13%;
+        width: 8%;
+        background-color: white;
+        border-radius:50%; 
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        box-shadow: 2px 4px var(--scissorsGrad2);
+    }
+    .borderColor1::before {
+        content:"";
+        position:absolute;
+        top:0;
+        left:0;
+        right:0;
+        bottom:0;
+        border-radius:50%; 
+        padding:5%; 
+        background: radial-gradient(closest-side, var(--scissorsGrad1) 0%, var(--scissorsGrad2)100%);
+        -webkit-mask: 
+           linear-gradient(var(--scissorsGrad2) 0 0) content-box, 
+           linear-gradient(var(--scissorsGrad2) 0 0);
+        -webkit-mask-composite: destination-out; 
+        mask-composite: exclude; 
+        pointer-events:none;
+      } */
+
+
+
+    #two{
         position: absolute;
         top: 46%;
         left: 61%;
@@ -128,9 +150,41 @@
         -ms-transform: translate(-50%, -50%);
         -o-transform: translate(-50%, -50%);
         transform: translate(-50%, -50%);
+        background-color: white;
+        padding: 0.5em;
+}
+    /* .borderColor2{
+        height: 13%;
+        width: 8%;
+        background-color: white;
+        border-radius:50%; 
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        box-shadow: 2px 4px var(--paperGrad2);
+        
     }
-    #spock{
-        width: 5%;
+    .borderColor2::before {
+        content:"";
+        position:absolute;
+        top:0;
+        left:0;
+        right:0;
+        bottom:0;
+        border-radius:50%; 
+        padding:5%; 
+        background: radial-gradient(closest-side, var(--paperGrad1) 0%, var(--paperGrad2)100%);
+        -webkit-mask: 
+           linear-gradient(var(--paperGrad2) 0 0) content-box, 
+           linear-gradient(var(--paperGrad2) 0 0);
+        -webkit-mask-composite: destination-out; 
+        mask-composite: exclude; 
+        pointer-events:none;
+      } */
+
+
+
+      #three{
         position: absolute;
         top: 47%;
         left:39%;
@@ -139,10 +193,41 @@
         -ms-transform: translate(-50%, -50%);
         -o-transform: translate(-50%, -50%);
         transform: translate(-50%, -50%);
+        background-color: white;
+        padding: 0.5em;
+      }
+    /* .borderColor3{
+        height: 13%;
+        width: 8%;
+        background-color: white;
+        border-radius:50%; 
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        box-shadow: 2px 4px var(--spock2);
     }
+    .borderColor3::before {
+        content:"";
+        position:absolute;
+        top:0;
+        left:0;
+        right:0;
+        bottom:0;
+        border-radius:50%; 
+        padding:5%; 
+        background: radial-gradient(closest-side, var(--spock1) 0%, var(--spock2)100%);
+        -webkit-mask: 
+           linear-gradient(var(--spock2) 0 0) content-box, 
+           linear-gradient(var(--spock2) 0 0);
+        -webkit-mask-composite: destination-out; 
+        mask-composite: exclude; 
+        pointer-events:none;
+      } */
 
-    #lizard{
-        width: 5%;
+
+
+
+    #four{
         position: absolute;
         top: 70%;
         left: 42%;
@@ -151,9 +236,40 @@
         -ms-transform: translate(-50%, -50%);
         -o-transform: translate(-50%, -50%);
         transform: translate(-50%, -50%);
+        background-color: white;
+        padding: 0.5em;
     }
-    #rock{
-        width: 5%;
+    /* .borderColor4 {
+        height: 13%;
+        width: 8%;
+        background-color: white;
+        border-radius:50%; 
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        box-shadow: 2px 4px var(--lizardGrad2);
+      }
+      .borderColor4::before {
+        content:"";
+        position:absolute;
+        top:0;
+        left:0;
+        right:0;
+        bottom:0;
+        border-radius:50%; 
+        padding:5%; 
+        background: radial-gradient(closest-side, var(--lizardGrad1) 0%, var(--lizardGrad2)100%);
+        -webkit-mask: 
+           linear-gradient(var(--lizardGrad1) 0 0) content-box, 
+           linear-gradient(var(--lizardGrad1) 0 0);
+        -webkit-mask-composite: destination-out; 
+        mask-composite: exclude; 
+        pointer-events:none;
+      } */
+
+
+
+    #five{
         position: absolute;
         top: 70%;
         left: 57%;
@@ -162,7 +278,40 @@
         -ms-transform: translate(-50%, -50%);
         -o-transform: translate(-50%, -50%);
         transform: translate(-50%, -50%);
+        background-color: white;
+        padding: 0.5em;
+}
+    /* .borderColor5{
+        height: 13%;
+        width: 8%;
+        background-color: white;
+        border-radius:50%; 
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        box-shadow: 2px 4px var(--rockGrad2);
     }
+    .borderColor5::before {
+        content:"";
+        position:absolute;
+        top:0;
+        left:0;
+        right:0;
+        bottom:0;
+        border-radius:50%; 
+        padding:5%; 
+        background: radial-gradient(closest-side, var(--rockGrad1) 0%, var(--rockGrad2)100%);
+        -webkit-mask: 
+           linear-gradient(var(--rockGrad2) 0 0) content-box, 
+           linear-gradient(var(--rockGrad2) 0 0);
+        -webkit-mask-composite: destination-out; 
+        mask-composite: exclude; 
+        pointer-events:none;
+      } */
+
+
+
+
         
 
     #step2 {
@@ -215,10 +364,7 @@
     }
 
 
-
    
-
-
 
 
 
@@ -300,3 +446,8 @@
          color: var(--cyan1);
          }
  
+
+
+
+
+

@@ -21,8 +21,9 @@ let word;
              let comp = choice.id;
              let src1 = this.src;
              let src2 = choice.src;
-                
-        playRound(this.id, comp, src1, src2);
+               let parentClass1 = this.parentElement.className; 
+               let parentClass2 =choice.parentElement.className;
+        playRound(this.id, comp, src1, src2, parentClass1, parentClass2);
 
          })
  })
@@ -30,7 +31,7 @@ let word;
        
 
 
-const playRound =(playerSelection,computerSelection, imgSrc1, imgSrc2) =>{
+const playRound =(playerSelection,computerSelection, imgSrc1, imgSrc2, parentClass1, parentClass2) =>{
     if ( playerSelection === computerSelection) {
         score +=1;
         word = 'YOU WIN';
@@ -50,15 +51,15 @@ const playRound =(playerSelection,computerSelection, imgSrc1, imgSrc2) =>{
         <p> THE HOUSE PICKED </p>
      </div>
     <div class ='choices'>
-       <div> 
+       <div class ='${parentClass1}'> 
             <img src='${imgSrc1}' id ='${playerSelection}' class ='choice1' alt ='${playerSelection}'/> 
        </div>
         <div class ='wnp'> 
             <p class ='word'>${word}</p>
             <button id='play' onclick ='playAgain()'> PLAY AGAIN </button>
         </div>
-        <div>
-            <img src='${imgSrc2}' id ='${playerSelection}'  class ='choice2' alt ='${playerSelection}'/>
+        <div class ='${parentClass2}'>
+            <img src='${imgSrc2}' id ='${computerSelection}'  class ='choice2' alt ='${computerSelection}'/>
         </div>
     </div> `;
     step2.innerHTML = step2Contents;
