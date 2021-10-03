@@ -64,17 +64,20 @@
         justify-content:space-between;
     }
     header button{
-        height:9em ;
+        height:6em ;
         width: 8em;
-        padding: 1em;
+        padding: 0.5em;
         border-radius: 10px;
         border:none;
-        color: var(--background1);
-        font-size: 0.7rem;
-        font-weight: 500;
+        color:  var(--scoreText);
+        font-size: 1rem;
+        font-weight: 700;
+        
     }
-    header span{
-        color: var(--scoreText);
+    header button div{
+        color: var(--background1);
+        font-size: 2rem;
+    
     }
 
 
@@ -441,12 +444,39 @@
       /* FOOTER SECTION */
     .attribution {
          font-size: 11px; text-align: center; 
+         color: white;
         }
     .attribution a {
-         color: var(--cyan1);
+         color: var(--spock1);
          }
  
 
+
+         /* Responsiveness */
+@media screen and (max-width:768px) {
+    
+#one{
+    top: 36%;
+    left: 50%;
+
+} 
+#two{
+    top: 50%;
+    left: 70%;
+}
+#three{
+    top: 50%;
+    left:30%;
+}
+#four{
+    top: 75%;
+    left: 35%;
+}
+#five{
+    top: 75%;
+    left: 65%;
+}
+}
 
 
 
