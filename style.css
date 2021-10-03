@@ -319,52 +319,60 @@
 
     #step2 {
         text-align: center;
-        
+        width: 60vw;
+        margin:2em auto 2em auto;
+        padding: 1em;
         
     }
+    .statement{
+        display: flex;
+        justify-content: space-between;
+        margin:0 0 2em 2em;
+    }
     #step2 p{
-        display: inline-flex;
         color: white;
         font-weight: 700;
-        padding: 1em 4em 0 4em;
+       
     } 
     .statement p{
         word-spacing: 0.3em;
         letter-spacing: 0.2em;
-        margin: 0 3em 0 3em;
+  
     }
     #step2 .choices{
         display: flex;
-        justify-content: center;
-        margin: 4em;
-    }
-    .wnp{
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-     
-    }
-    .word{
-        font-size: 2.5rem;
-        margin-bottom: 0.3em;
-    }
-    .choices button{
-        width: 12em;
-        padding: 0.7em;
-        font-weight: 700;
-        color: var(--darkText);
-    }
-    .choices button:hover{
-        background-color: var(--darkText);
-        color: white;
-        transition: 0.4s ease;
+        justify-content: space-between;
+        margin: 4em;   
     }
     .choices img{
         background-color: white;;
         padding:0.5em;
         max-width: 100%;
-        margin: 1em 10% 0 10%;
     }
+    .wnp{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        position: absolute;
+        top: 40%;
+        left: 45%;
+    }
+    .word{
+        font-size: 2.5rem;
+        margin-bottom: 0.3em;
+    }
+    .wnp button{
+        width: 12em;
+        padding: 0.7em;
+        font-weight: 700;
+        color: var(--darkText);
+    }
+    .wnp button:hover{
+        background-color: var(--darkText);
+        color: white;
+        transition: 0.4s ease;
+    }
+    
 
 
    
@@ -375,6 +383,9 @@
 
 
     /* BOTTOM SECTION */
+    .bottom{
+        margin: 0 0 1em 0;
+    }
     .rulesBtn{
         float: right;
         background-color: inherit;
@@ -386,14 +397,14 @@
         font-weight: 500;
         font-size: 0.7rem;
         position: relative;
-    }
+    } 
     .rulesBtn:hover{
         color: var(--background1);
         background-color: white;
         font-weight: 700;
         transition: 0.4s ease;
     }
-    #rules{
+     #rules{
         visibility: hidden;
         width: 30%;
         background-color: white;
@@ -454,9 +465,12 @@
 
          /* Responsiveness */
 @media screen and (max-width:768px) {
+ 
     header{
         width: 80vw;
     }
+
+
     #choose img{
         max-width: 70%;
     }
@@ -481,6 +495,29 @@
         top: 73%;
         left: 65%;
     }
+    #step2 {
+        width: 90vw; 
+    }
+  .wnp{
+    position: relative;
+    top: 0;
+    left: 0;
+    } 
+    
+
+
+    .rulesBtn{
+        float: none;
+    }
+    #rules{
+        width: 100%;
+        height: 100%;
+        top: 0;
+        left: 0;
+        padding: 10%;
+     
+    }
+ 
     }
 
 

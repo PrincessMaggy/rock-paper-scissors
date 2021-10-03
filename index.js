@@ -54,14 +54,15 @@ const playRound =(playerSelection,computerSelection, imgSrc1, imgSrc2, parentCla
        <div class ='${parentClass1}'> 
             <img src='${imgSrc1}' id ='${playerSelection}' class ='choice1' alt ='${playerSelection}'/> 
        </div>
-        <div class ='wnp'> 
-            <p class ='word'>${word}</p>
-            <button id='play' onclick ='playAgain()'> PLAY AGAIN </button>
-        </div>
-        <div class ='${parentClass2}'>
-            <img src='${imgSrc2}' id ='${computerSelection}'  class ='choice2' alt ='${computerSelection}'/>
-        </div>
-    </div> `;
+       <div class ='${parentClass2}'>
+       <img src='${imgSrc2}' id ='${computerSelection}'  class ='choice2' alt ='${computerSelection}'/>
+   </div>
+    </div>
+    <div class ='wnp'> 
+    <p class ='word'>${word}</p>
+    <button id='play' onclick ='playAgain()'> PLAY AGAIN </button>
+</div>
+`;
     step2.innerHTML = step2Contents;
   };
 
