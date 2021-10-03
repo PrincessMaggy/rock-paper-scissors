@@ -521,5 +521,32 @@
     }
 
 
+    @media only screen and (max-width: 1000px) and (min-width:769px) {
+        #one{
+            top: 37%;
+        }
+        #two{
+            top: 50%;
+            left: 65%;
+        }
+        #three{
+            top: 50%;
+            left:35%;
+        }
+        #four{
+            top: 73%;
+        }
+        #five{
+            top: 73%;
+        }
+        #step2 {
+            width: 90vw; 
+        }
+    }
 
+
+      
+        
+        
+        
 
