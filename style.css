@@ -304,7 +304,7 @@
 
 
     #choose img{
-        max-width: 70%;
+        max-width: 50%;
     }
     #one{
         top: 39%;
@@ -335,7 +335,12 @@
     top: 0;
     left: 0;
     } 
-    
+    #step2 .choices, .statement{
+        width: 85vw;
+    }
+
+
+
 
 
     .rulesBtn{
@@ -354,6 +359,9 @@
 
 
     @media only screen and (max-width: 1000px) and (min-width:769px) {
+        #choose div{
+            padding: 0.7em;
+        }
         #one{
             top: 37%;
         }
@@ -373,6 +381,9 @@
         }
         #step2 {
             width: 90vw; 
+        }
+        #step2 .choices{
+            width: 80vw;
         }
     }
 
