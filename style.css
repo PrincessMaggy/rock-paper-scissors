@@ -302,9 +302,11 @@
         width: 80vw;
     }
 
-
+    #choose div{
+        padding: 0.5em;
+    }
     #choose img{
-        max-width: 50%;
+        max-width: 70%;
     }
     #one{
         top: 39%;
@@ -335,8 +337,8 @@
     top: 0;
     left: 0;
     } 
-    #step2 .choices, .statement{
-        width: 85vw;
+    #step2 .choices{
+        width: 70vw;
     }
 
 
