@@ -14,24 +14,24 @@ let word;
 
 
 
- const playerOptions = [rock, paper, scissors, spock, lizard];
+const playerOptions = [rock, paper, scissors, spock, lizard];
      playerOptions.forEach(options =>{
         options.addEventListener('click', function(){
              let choice = (playerOptions[Math.floor(Math.random() * playerOptions.length)]);
              let comp = choice.id;
              let src1 = this.src;
              let src2 = choice.src;
-               let parentClass1 = this.parentElement.className; 
-               let parentClass2 =choice.parentElement.className;
-        playRound(this.id, comp, src1, src2, parentClass1, parentClass2);
-
+               let parentid1 = this.parentElement.id; 
+               let parentid2 =choice.parentElement.id;
+        playRound(this.id, comp, src1, src2, parentid1, parentid2);
+       
          })
  })
 
        
 
 
-const playRound =(playerSelection,computerSelection, imgSrc1, imgSrc2, parentClass1, parentClass2) =>{
+const playRound =(playerSelection,computerSelection, imgSrc1, imgSrc2, parentid1, parentid2) =>{
     if ( playerSelection === computerSelection) {
         score +=1;
         word = 'YOU WIN';
@@ -44,17 +44,19 @@ const playRound =(playerSelection,computerSelection, imgSrc1, imgSrc2, parentCla
           }
           updateScore();  
   }
+  
   choose.style.display= 'none';
+  step2.style.display='block';
   let step2Contents =
     `<div class ='statement'> 
         <p> YOU PICKED </p> 
         <p> THE HOUSE PICKED </p>
      </div>
     <div class ='choices'>
-       <div class ='${parentClass1}'> 
+       <div id ='${parentid1}'> 
             <img src='${imgSrc1}' id ='${playerSelection}' class ='choice1' alt ='${playerSelection}'/> 
        </div>
-       <div class ='${parentClass2}'>
+       <div id ='${parentid2}'>
        <img src='${imgSrc2}' id ='${computerSelection}'  class ='choice2' alt ='${computerSelection}'/>
    </div>
     </div>
@@ -92,18 +94,18 @@ let closeBtn = document.getElementById('close');
 
 
 const pop =() =>{
-    rules.classList.toggle("show");
+    rules.style.visibility= 'visible';
+    rules.style.animation= 'fadeIn 1s';
     header.style.opacity='0.5';
-     main.style.opacity='0.5';
-    
+    main.style.opacity='0.5';
 }
     
 rulesBtn.addEventListener('click', pop);
     
 const close= () =>{
-    rules.classList.toggle("hide");
+    rules.style.visibility= 'hidden';
     header.style.opacity='1';
-     main.style.opacity='1';
+    main.style.opacity='1';
 }
 
 closeBtn.addEventListener('click', close);
