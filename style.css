@@ -45,6 +45,10 @@
         display: flex;
         flex-direction: column;
         cursor: pointer;
+        user-select: none;
+        -webkit-user-select: none;
+        -moz-user-select: none;
+        
     } 
 
 
@@ -306,7 +310,7 @@
         padding: 0.5em;
     }
     #choose img{
-        max-width: 70%;
+        max-width: 50%;
     }
     #one{
         top: 39%;
