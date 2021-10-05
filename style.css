@@ -113,6 +113,7 @@
         display: flex;
         justify-content: center;
         align-items: center;
+        
     }
     #choose div:hover{
         padding: 1.1em;
@@ -198,14 +199,96 @@
         transform: translate(-50%, -50%);
         background-color: white;
         padding: 1em;
-        border-radius: 50%;
-        
+        border-radius: 50%;    
     }
     
+
+    /* Animation */
+
+
+    .choices div {
+        transition: 5s ease-in;
+    -webkit-animation: pulse 1.25s infinite cubic-bezier(0.66, 0, 0, 1);
+    -moz-animation:pulse 1.25s infinite cubic-bezier(0.66, 0, 0, 1) ;
+    -ms-animation:pulse 1.25s infinite cubic-bezier(0.66, 0, 0, 1);
+    animation: pulse 1.25s infinite cubic-bezier(0.66, 0, 0, 1);
+      }
+      
+      @-webkit-keyframes pulse{
+          to{
+              box-shadow: 0 0 0 40px var(--background1);
+          }
+      }
+      @-moz-keyframes pulse{
+        to{
+            box-shadow: 0 0 0 45px var(--background1);
+        }
+      }
+      @-ms-keyframes pulse{
+        to{
+            box-shadow: 0 0 0 45px var(--background1);
+        }
+      }
+      @keyframes pulse{
+        to{
+            box-shadow: 0 0 0 45px var(--background1);
+        }
+      }
+
+    /* .animate1{
+        animation: animate1 2s linear;
+    }
+    
+    .animate2{
+        animation: animate2 2s linear;
+    }
+
+    
+@keyframes animate1 {
+    0%{
+        opacity: 0;
+    }
+    15%{
+        opacity: 0;
+        transform: translateX(-160px);
+    }
+    30%{
+        transform: translateX(-100px);
+    }
+    80%{
+        transform: translateX(0px);
+    }
+    100%{
+        transform: translateX(0px);
+    }
+
+}
+
+@keyframes animate2{
+    0%{
+        opacity: 0;
+    }
+    15%{
+        opacity: 0;
+        transform: translateX(160px);
+    }
+    30%{
+        transform: translateX(100px);
+    }
+    80%{
+        transform: translateX(0px);
+    }
+    100%{
+        transform: translateX(0px);
+    }
+} */
+
+
     .choices img{
         max-width: 100%;
       
     }
+    
     
     .wnp{
         display: flex;
@@ -402,3 +485,4 @@
         
         
 
+ 
